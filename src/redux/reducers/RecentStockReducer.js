@@ -10,7 +10,7 @@ const initialState = {
 
 export default function StocksReducer(state = initialState, action) {
   switch (action.type) {
-    case 'CHANGE_RECENT_ADDED_STOCK':
+    case 'CHANGE_RECENT_BROUGHT_STOCK':
       return {
         id: action.payload.id,
         nameOfStock: action.payload.nameOfStock,

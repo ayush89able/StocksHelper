@@ -11,8 +11,8 @@ import DatePicker from 'react-datetime';
 import 'react-datetime/css/react-datetime.css';
 
 import { useDispatch } from 'react-redux'
-import AddStock from '../redux/actions/AddStockAction'
-import ChangeRecentAddedStock from '../redux/actions/ChangeRecentAddedStockAction'
+import BroughtStock from '../redux/actions/BroughtStockAction'
+import ChangeRecentBroughtStock from '../redux/actions/ChangeRecentBroughtStockAction'
 
 import moment from 'moment'
 function Form(props) {
@@ -71,8 +71,8 @@ function Form(props) {
       ...state,
       id: Date.now()
     }
-    dispatch(AddStock(stock))
-    dispatch(ChangeRecentAddedStock(stock))
+    dispatch(BroughtStock(stock))
+    dispatch(ChangeRecentBroughtStock(stock))
     clearForm()
   }
 
