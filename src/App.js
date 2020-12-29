@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import CSSReset from '@tds/core-css-reset'
+import Form from './components/Form'
+import StocksData from './components/StocksData'
+import Stocks from './components/Stocks'
+import FlexGrid from '@tds/core-flex-grid'
+import { Provider } from 'react-redux'
+import store from './store'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CSSReset />
+      <Provider store={store}>
+        <FlexGrid>
+          <Form />
+          <StocksData />
+          <Stocks />
+        </FlexGrid>
+      </Provider>
     </div>
   );
 }

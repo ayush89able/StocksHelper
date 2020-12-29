@@ -3,12 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@tds/community-date-picker": "^1.0.3",
+    "@tds/core-box": "^2.2.1",
+    "@tds/core-button": "^2.2.0",
+    "@tds/core-css-reset": "^3.0.0",
+    "@tds/core-display-heading": "^3.0.4",
+    "@tds/core-flex-grid": "^3.0.11",
+    "@tds/core-heading": "^3.0.4",
+    "@tds/core-input": "^3.0.42",
+    "@tds/core-paragraph": "^2.0.12",
+    "@tds/core-spinner": "^3.1.13",
+    "@tds/core-strong": "^2.1.10",
+    "@tds/core-tooltip": "^4.2.17",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "moment": "^2.27.0",
     "react": "^16.13.1",
+    "react-datetime": "^2.16.3",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-redux": "^7.2.1",
+    "react-scripts": "^2.1.8",
+    "redux": "^4.0.5",
+    "styled-components": "^5.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "redux-devtools-extension": "^2.13.8"
   }
 }
